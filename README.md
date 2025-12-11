@@ -10,3 +10,24 @@ In this project, we attempt to reproduce the methods from “Database for an emo
 To extend this work, we conduct independent exploratory data analysis (EDA) and develop additional machine learning pipelines to evaluate classification performance beyond the original approach. Our contributions include validating aspects of the paper’s methodology, analyzing the dataset’s statistical and spectral properties, and implementing our own models to predict emotional states from EEG signals.
 
 [1]  Alakuş, T. B., Gönen, M., & Türkoğlu, I. (2020). Database for an emotion recognition system based on EEG signals and various computer games — GAMEEMO. Biomedical Signal Processing and Control, 60, 101951
+
+
+
+# Instructions
+
+To run SAM score extraction
+1. Load the .zip file from kaggle and save
+2. run ```python extract_SAM_scores.py```
+
+To run feature extraction from paper
+1. update list of features in feature_extraction function
+2. run ```python feature_extraction_1```
+ 
+To run windowed feature extraction 
+1. Change window_size and window_overlap in main
+2. Run ```python feature_extraction_2```
+
+To run the model training pipeline
+1. Download the CSC570FinalCode.ipynb
+2. Ensure that you have the right files provided in this repo (bandpower_features folder + final_SAM_Scores.pdf + simple_features_paper.csv) 
+3. <img width="2402" height="1031" alt="image" src="https://github.com/user-attachments/assets/a5330b2c-cbbd-472a-b42f-dc2db825eb4e" />
